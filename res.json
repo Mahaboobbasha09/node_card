@@ -1,0 +1,72 @@
+[
+    {
+        "id":1,
+        "name":"Hari family restarunt",
+        "image":"https://b.zmtcdn.com/data/pictures/5/20887615/0b7258cb715eceea6c6eb7e0e23f95ff.jpeg",
+        "contact":9087654321,
+        "address":"Jagtial Locality, Jagtial."
+    },
+    {
+        "id":2,
+        "name":"Ram family restarunt",
+        "image":"https://content.jdmagicbox.com/comp/east-godavari/n8/9999px883.x883.230904232432.k7n8/catalogue/sri-ram-s-family-restaurant-pithapuram-east-godavari-food-court-yt7xitkwvz-250.jpg",
+        "contact":8765432190,
+        "address":"kphb road no:5 near metro station Hyderabad."
+    },
+    {
+        "id":3,
+        "name":"Vishal multi cusine restarunt",
+        "image":"https://r1imghtlak.mmtcdn.com/31f9276e290411e8beea02755708f0b3.jpeg",
+        "contact":9087654321,
+        "address":"Road No 1 Masab Tank, Hyderabad."
+    },
+    {
+        "id":4,
+        "name":"Basha's Kitchen",
+        "image":"https://content3.jdmagicbox.com/comp/mangalore/x6/0824px824.x824.190104173032.y2x6/catalogue/basha-s-kitchen-mangalore-1yv616d12f.jpg",
+        "contact":9087654321,
+        "address":"Srnagar metrostation near amaravti tiffins hyderabad."
+    },
+    {
+        "id":5,
+        "name":"Mehfil Restarunt",
+        "image":"https://fuddo.in//assets/images/data/Mehfil_Uppal.jpg",
+        "contact":8765432190,
+        "address":"Warangal Hwy, Shanti Nagar, Uppal, Hyderabad"
+    },
+    {
+        "id":6,
+        "name":"sai family restarunt",
+        "image":"https://b.zmtcdn.com/data/pictures/5/20887615/0b7258cb715eceea6c6eb7e0e23f95ff.jpeg",
+        "contact":9087654321,
+        "address":"Jagtial Locality, Jagtial."
+    },
+    {
+        "id":7,
+        "name":"Ram family restarunt",
+        "image":"https://content.jdmagicbox.com/comp/east-godavari/n8/9999px883.x883.230904232432.k7n8/catalogue/sri-ram-s-family-restaurant-pithapuram-east-godavari-food-court-yt7xitkwvz-250.jpg",
+        "contact":8765432190,
+        "address":"kphb road no:5 near metro station Hyderabad."
+    },
+    {
+        "id":8,
+        "name":"Vishal multi cusine restarunt",
+        "image":"https://r1imghtlak.mmtcdn.com/31f9276e290411e8beea02755708f0b3.jpeg",
+        "contact":9087654321,
+        "address":"Road No 1 Masab Tank, Hyderabad."
+    },
+    {
+        "id":9,
+        "name":"haze's Kitchen",
+        "image":"https://content3.jdmagicbox.com/comp/mangalore/x6/0824px824.x824.190104173032.y2x6/catalogue/basha-s-kitchen-mangalore-1yv616d12f.jpg",
+        "contact":9087654321,
+        "address":"Srnagar metrostation near amaravti tiffins hyderabad."
+    },
+    {
+        "id":10,
+        "name":"Mehfil Restarunt",
+        "image":"https://fuddo.in//assets/images/data/Mehfil_Uppal.jpg",
+        "contact":8765432190,
+        "address":"cyber towers opp, hitech city, Hyderabad"
+    }
+]

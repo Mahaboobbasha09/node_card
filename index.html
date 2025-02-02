@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aG90ZWwlMjBib29raW5nfGVufDB8fDB8fHww'); 
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        
+       
+        #container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            width: 100%;
+            z-index: 2; 
+        }
+        .restaurant-card {
+            background: rgba(255, 255, 255, 0.1); 
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            backdrop-filter: blur(10px); 
+            border: 1px solid rgba(255, 255, 255, 0.2); 
+        }
+        .restaurant-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+        .restaurant-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .restaurant-card:hover img {
+            transform: scale(1.1);
+        }
+        .restaurant-card h1 {
+            font-size: 1.5rem;
+            margin: 15px 0 10px;
+            color: #3d0c9f;
+            font-family: 'Orbitron', sans-serif; 
+        }
+        .restaurant-card h4 {
+            font-size: 1rem;
+            margin: 5px 0;
+            color: #d73390; 
+            font-family: 'Roboto', sans-serif; 
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); 
+        }
+        .one {
+            text-align: center;
+            font-family: 'Orbitron', sans-serif; 
+            color: #f4f4f4;
+            margin-bottom: 20px;
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="one">Restaurants</h1>
+    <div id="container"></div>
+    <script>
+        fetch("http://localhost:3000", {
+            method: "post"
+        }).then((val) => {
+            return val.json();
+        }).then((data) => {
+            let container = document.getElementById("container");
+            data.forEach((restaurant) => {
+                let card = document.createElement("div");
+                card.className = "restaurant-card";
+                let img = document.createElement("img");
+                img.src = restaurant.image;
+                img.alt = restaurant.name;
+                let name = document.createElement("h1");
+                name.innerText = restaurant.name;
+                let contact = document.createElement("h4");
+                contact.innerText = `Phone: ${restaurant.contact}`;
+                let address = document.createElement("h4");
+                address.innerText = `Address: ${restaurant.address}`;
+                card.append(img, name, contact, address);
+                container.append(card);
+            });
+        }).catch((error) => {
+            console.error("Error fetching data:", error);
+        });
+    </script>
+</body>
+</html>
